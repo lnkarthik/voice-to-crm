@@ -1,0 +1,8 @@
+# Python / uv
+.venv/
+__pycache__/
+
+# Pipeline outputs
+runs/
+reports/
+*.wav
