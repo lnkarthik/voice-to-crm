@@ -1,0 +1,29 @@
+{
+  "lead": {
+    "first_name": "Maria",
+    "last_name": "Lopez",
+    "company": "Sunbelt Retail Group",
+    "title": "Director of Real Estate",
+    "email": "maria.lopez@sunbeltretail.com",
+    "phone": "214-555-0147",
+    "rating": "Hot",
+    "description": "Wants ~20,000 sq ft on US-75 with 50+ parking spots; ready to sign this quarter."
+  },
+  "tasks": [
+    {
+      "task_type": "Email",
+      "subject": "Email Maria three US-75 listings",
+      "due_phrase": "by Friday",
+      "due_date": "2026-10-02",
+      "priority": "High"
+    },
+    {
+      "task_type": "Meeting",
+      "subject": "Site tour with Maria Lopez",
+      "due_phrase": "Wednesday October 7th",
+      "due_date": "2026-10-07",
+      "priority": null
+    }
+  ],
+  "uncertain_fields": []
+}

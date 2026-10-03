@@ -1,0 +1,13 @@
+{
+  "lead": null,
+  "tasks": [
+    {
+      "task_type": "Other",
+      "subject": "Chase signed lease paperwork for the Plano deal",
+      "due_phrase": "tomorrow morning",
+      "due_date": "2026-09-29",
+      "priority": "High"
+    }
+  ],
+  "uncertain_fields": []
+}

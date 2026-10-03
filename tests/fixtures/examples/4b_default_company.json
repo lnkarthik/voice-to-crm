@@ -1,0 +1,22 @@
+{
+  "lead": {
+    "first_name": "Barry",
+    "last_name": "Allen",
+    "company": null,
+    "title": null,
+    "email": "test@gmail.com",
+    "phone": "123-456-7890",
+    "rating": null,
+    "description": "Looking to lease property on US-75 to build a retail store; needs 50+ parking spots."
+  },
+  "tasks": [
+    {
+      "task_type": "Call",
+      "subject": "Call Barry Allen back about US-75 retail lease",
+      "due_phrase": null,
+      "due_date": null,
+      "priority": null
+    }
+  ],
+  "uncertain_fields": []
+}

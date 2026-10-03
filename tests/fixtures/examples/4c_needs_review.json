@@ -1,0 +1,24 @@
+{
+  "lead": {
+    "first_name": "Tony",
+    "last_name": null,
+    "company": "Lakeside Pizza",
+    "title": null,
+    "email": "tony@lakesidepizza.com",
+    "phone": null,
+    "rating": null,
+    "description": "Owns Lakeside Pizza; wants a second location near the Galleria. Met at retail meetup."
+  },
+  "tasks": [
+    {
+      "task_type": "Call",
+      "subject": "Call Tony (Lakeside Pizza) about second location",
+      "due_phrase": "Thursday",
+      "due_date": "2026-10-01",
+      "priority": null
+    }
+  ],
+  "uncertain_fields": [
+    "lead.email"
+  ]
+}
