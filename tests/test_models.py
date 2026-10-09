@@ -25,7 +25,10 @@ def test_blank_strings_become_none():
 
 
 def test_impossible_date_still_parses():
-    assert TaskDraft(task_type="Call", subject="x", due_date="2026-02-30").due_date == "2026-02-30"
+    assert (
+        TaskDraft(task_type="Call", subject="x", due_date="2026-02-30").due_date
+        == "2026-02-30"
+    )
 
 
 def test_unknown_picklist_value_rejected():

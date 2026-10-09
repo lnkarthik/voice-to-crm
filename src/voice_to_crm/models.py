@@ -27,7 +27,16 @@ class LeadDraft(BaseModel):
     description: str | None = None
     rating: Literal["Hot", "Warm", "Cold"] | None = None
 
-    @field_validator("first_name", "last_name", "company", "title", "email", "phone", "description", mode="before")
+    @field_validator(
+        "first_name",
+        "last_name",
+        "company",
+        "title",
+        "email",
+        "phone",
+        "description",
+        mode="before",
+    )
     @classmethod
     def blank_to_none(cls, v):
         if isinstance(v, str) and not v.strip():
@@ -83,4 +92,3 @@ class Decision(BaseModel):
     warnings: list[str] = []
     lead_payload: dict | None = None
     task_payloads: list[dict] = []
-
