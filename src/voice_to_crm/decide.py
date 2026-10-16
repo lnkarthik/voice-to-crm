@@ -34,6 +34,8 @@ def decision(extraction: Extraction, reference_date: date) -> Decision:
         phone = normalize_phone(lead.phone)
         if phone is None or len(phone) < 10:
             reasons.append("invalid: lead.phone")
+        else:
+            lead_payload["phone"] = phone
     for i, task in enumerate(extraction.tasks):
         if task.due_date is None:
             continue

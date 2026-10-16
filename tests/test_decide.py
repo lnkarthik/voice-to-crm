@@ -110,6 +110,18 @@ def test_short_phone_needs_review():
     assert result.reasons == ["invalid: lead.phone"]
 
 
+def test_valid_phone_is_normalized_in_payload():
+    result = review_reasons({"phone": "(555) 014-7890"})
+    assert result.outcome == "CREATE"
+    assert result.lead_payload["phone"] == "5550147890"
+
+
+def test_invalid_phone_keeps_raw_value_in_payload():
+    result = review_reasons({"phone": "555-0147"})
+    assert result.outcome == "NEEDS_REVIEW"
+    assert result.lead_payload["phone"] == "555-0147"
+
+
 def test_phone_without_digits_needs_review():
     assert review_reasons({"phone": "call me"}).reasons == ["invalid: lead.phone"]
 
